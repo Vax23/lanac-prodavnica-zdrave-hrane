@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_W_IncGufEeq-E6558pztow" name="UseCase1">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_W_2ZIGufEeq-E6558pztow">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_uRub0GutEeq-E6558pztow" name="Kupac"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_y2-IoGutEeq-E6558pztow" name="Odlazak u prodavnicu"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_7z-f4GutEeq-E6558pztow" name="Pristupanje Web sajtu"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ml2f0GuuEeq-E6558pztow" name="Odabir proizvoda"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_vz6K0GuuEeq-E6558pztow" name="Prijem proizvoda"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_EKSOEGuvEeq-E6558pztow" name="Logovanje">
+    <generalization xmi:type="uml:Generalization" xmi:id="_CB1zgGuyEeq-E6558pztow" general="_jNwtMGuvEeq-E6558pztow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_HZU88GuvEeq-E6558pztow" name="Registracija">
+    <generalization xmi:type="uml:Generalization" xmi:id="_ANYzUGuyEeq-E6558pztow" general="_jNwtMGuvEeq-E6558pztow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Pav1sGuvEeq-E6558pztow" memberEnd="_Pa0uMGuvEeq-E6558pztow _Pa3KcGuvEeq-E6558pztow">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Pa0HIGuvEeq-E6558pztow" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Pa0HIWuvEeq-E6558pztow" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Pa0uMGuvEeq-E6558pztow" name="kupac" type="_uRub0GutEeq-E6558pztow" association="_Pav1sGuvEeq-E6558pztow"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Pa3KcGuvEeq-E6558pztow" name="odabir proizvoda" type="_ml2f0GuuEeq-E6558pztow" association="_Pav1sGuvEeq-E6558pztow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_QYqPcGuvEeq-E6558pztow" memberEnd="_QYq2gmuvEeq-E6558pztow _QYq2g2uvEeq-E6558pztow">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QYq2gGuvEeq-E6558pztow" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QYq2gWuvEeq-E6558pztow" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_QYq2gmuvEeq-E6558pztow" name="pristupanje web sajtu" type="_7z-f4GutEeq-E6558pztow" association="_QYqPcGuvEeq-E6558pztow"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_QYq2g2uvEeq-E6558pztow" name="kupac" type="_uRub0GutEeq-E6558pztow" association="_QYqPcGuvEeq-E6558pztow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_U_B9oGuvEeq-E6558pztow" memberEnd="_U_CksmuvEeq-E6558pztow _U_DLwGuvEeq-E6558pztow">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_U_CksGuvEeq-E6558pztow" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_U_CksWuvEeq-E6558pztow" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_U_CksmuvEeq-E6558pztow" name="odlazak u prodavnicu" type="_y2-IoGutEeq-E6558pztow" association="_U_B9oGuvEeq-E6558pztow"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_U_DLwGuvEeq-E6558pztow" name="kupac" type="_uRub0GutEeq-E6558pztow" association="_U_B9oGuvEeq-E6558pztow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WXRi8GuvEeq-E6558pztow" memberEnd="_WXSKAmuvEeq-E6558pztow _WXSKA2uvEeq-E6558pztow">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WXSKAGuvEeq-E6558pztow" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WXSKAWuvEeq-E6558pztow" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WXSKAmuvEeq-E6558pztow" name="kupac" type="_uRub0GutEeq-E6558pztow" association="_WXRi8GuvEeq-E6558pztow"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WXSKA2uvEeq-E6558pztow" name="prijem proizvoda" type="_vz6K0GuuEeq-E6558pztow" association="_WXRi8GuvEeq-E6558pztow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_jNwtMGuvEeq-E6558pztow" name="Prijavljivanje na sajt"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_rO4D8GuvEeq-E6558pztow" memberEnd="_rO4rAmuvEeq-E6558pztow _rO4rA2uvEeq-E6558pztow">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rO4rAGuvEeq-E6558pztow" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rO4rAWuvEeq-E6558pztow" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rO4rAmuvEeq-E6558pztow" name="kupac" type="_uRub0GutEeq-E6558pztow" association="_rO4D8GuvEeq-E6558pztow"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rO4rA2uvEeq-E6558pztow" name="prijavljivanje na sajt" type="_jNwtMGuvEeq-E6558pztow" association="_rO4D8GuvEeq-E6558pztow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_4Of8EGuvEeq-E6558pztow" name="Slanje zahteva"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7KyuEGuvEeq-E6558pztow" memberEnd="_7Kz8MmuvEeq-E6558pztow _7K0jQGuvEeq-E6558pztow">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7Kz8MGuvEeq-E6558pztow" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7Kz8MWuvEeq-E6558pztow" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7Kz8MmuvEeq-E6558pztow" name="kupac" type="_uRub0GutEeq-E6558pztow" association="_7KyuEGuvEeq-E6558pztow"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7K0jQGuvEeq-E6558pztow" name="slanje zahteva" type="_4Of8EGuvEeq-E6558pztow" association="_7KyuEGuvEeq-E6558pztow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_LrijkGuwEeq-E6558pztow" name="Web sajt"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_XeAsEGuwEeq-E6558pztow" name="Logovanje">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_yJsEgGuwEeq-E6558pztow" name="ExtensionPoint1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ZKCJAGuwEeq-E6558pztow" memberEnd="_ZKCJA2uwEeq-E6558pztow _ZKCJBGuwEeq-E6558pztow">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZKCJAWuwEeq-E6558pztow" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZKCJAmuwEeq-E6558pztow" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ZKCJA2uwEeq-E6558pztow" name="logovanje" type="_XeAsEGuwEeq-E6558pztow" association="_ZKCJAGuwEeq-E6558pztow"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ZKCJBGuwEeq-E6558pztow" name="web sajt" type="_LrijkGuwEeq-E6558pztow" association="_ZKCJAGuwEeq-E6558pztow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_esmZsGuwEeq-E6558pztow" name="Provera podataka za logovanje">
+    <include xmi:type="uml:Include" xmi:id="_iPJTYGuwEeq-E6558pztow" addition="_XeAsEGuwEeq-E6558pztow"/>
+    <include xmi:type="uml:Include" xmi:id="_EAobcGuyEeq-E6558pztow" addition="_EKSOEGuvEeq-E6558pztow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_osa40GuwEeq-E6558pztow" name="Greška i ponovno učitavanje forme">
+    <extend xmi:type="uml:Extend" xmi:id="_yJrdcGuwEeq-E6558pztow" extendedCase="_XeAsEGuwEeq-E6558pztow" extensionLocation="_yJsEgGuwEeq-E6558pztow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_K8kvUGuxEeq-E6558pztow" name="Kasir"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Op4HgGuxEeq-E6558pztow" name="Skeniranje namernica"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ROicoGuxEeq-E6558pztow" name="Obračun"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Wca2wGuxEeq-E6558pztow" name="Obaveštenje o ukupnom trošku"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_eOWiAGuxEeq-E6558pztow" name="Naplata i izdavanje fiskalnog računa"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lx8PQGuxEeq-E6558pztow" memberEnd="_lx82UGuxEeq-E6558pztow _lx82UWuxEeq-E6558pztow">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lx8PQWuxEeq-E6558pztow" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lx8PQmuxEeq-E6558pztow" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lx82UGuxEeq-E6558pztow" name="naplata i izdavanje fiskalnog računa" type="_eOWiAGuxEeq-E6558pztow" association="_lx8PQGuxEeq-E6558pztow"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lx82UWuxEeq-E6558pztow" name="kasir" type="_K8kvUGuxEeq-E6558pztow" association="_lx8PQGuxEeq-E6558pztow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pFgRwGuxEeq-E6558pztow" memberEnd="_pFhf4WuxEeq-E6558pztow _pFhf4muxEeq-E6558pztow">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pFg40GuxEeq-E6558pztow" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pFhf4GuxEeq-E6558pztow" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_pFhf4WuxEeq-E6558pztow" name="kasir" type="_K8kvUGuxEeq-E6558pztow" association="_pFgRwGuxEeq-E6558pztow"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_pFhf4muxEeq-E6558pztow" name="skeniranje namernica" type="_Op4HgGuxEeq-E6558pztow" association="_pFgRwGuxEeq-E6558pztow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qIZSIGuxEeq-E6558pztow" memberEnd="_qIZ5MmuxEeq-E6558pztow _qIZ5M2uxEeq-E6558pztow">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qIZ5MGuxEeq-E6558pztow" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qIZ5MWuxEeq-E6558pztow" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_qIZ5MmuxEeq-E6558pztow" name="kasir" type="_K8kvUGuxEeq-E6558pztow" association="_qIZSIGuxEeq-E6558pztow"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_qIZ5M2uxEeq-E6558pztow" name="obračun" type="_ROicoGuxEeq-E6558pztow" association="_qIZSIGuxEeq-E6558pztow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_rLz28GuxEeq-E6558pztow" memberEnd="_rLz282uxEeq-E6558pztow _rL0eAGuxEeq-E6558pztow">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rLz28WuxEeq-E6558pztow" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rLz28muxEeq-E6558pztow" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rLz282uxEeq-E6558pztow" name="kasir" type="_K8kvUGuxEeq-E6558pztow" association="_rLz28GuxEeq-E6558pztow"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rL0eAGuxEeq-E6558pztow" name="obaveštenje o ukupnom trošku" type="_Wca2wGuxEeq-E6558pztow" association="_rLz28GuxEeq-E6558pztow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_u5xWcGuxEeq-E6558pztow" client="_y2-IoGutEeq-E6558pztow" supplier="_eOWiAGuxEeq-E6558pztow"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_OmzI4GuyEeq-E6558pztow" name="Formiranje pošiljke"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_QrOewGuyEeq-E6558pztow" memberEnd="_QrOew2uyEeq-E6558pztow _QrPF0GuyEeq-E6558pztow">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QrOewWuyEeq-E6558pztow" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QrOewmuyEeq-E6558pztow" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_QrOew2uyEeq-E6558pztow" name="formiranje pošiljke" type="_OmzI4GuyEeq-E6558pztow" association="_QrOewGuyEeq-E6558pztow"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_QrPF0GuyEeq-E6558pztow" name="web sajt" type="_LrijkGuwEeq-E6558pztow" association="_QrOewGuyEeq-E6558pztow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_XUw-kGuyEeq-E6558pztow" name="Prosleđivanje pošiljke sektoru za upravljanje isporukama"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_cPM4QGuyEeq-E6558pztow" memberEnd="_cPNfUmuyEeq-E6558pztow _cPNfU2uyEeq-E6558pztow">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cPNfUGuyEeq-E6558pztow" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cPNfUWuyEeq-E6558pztow" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_cPNfUmuyEeq-E6558pztow" name="prosleđivanje pošiljke sektoru za upravljanje isporukama" type="_XUw-kGuyEeq-E6558pztow" association="_cPM4QGuyEeq-E6558pztow"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_cPNfU2uyEeq-E6558pztow" name="web sajt" type="_LrijkGuwEeq-E6558pztow" association="_cPM4QGuyEeq-E6558pztow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_kbbS0GuyEeq-E6558pztow" name="Sektor za upravljanje isporukama"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_x7lFIGuyEeq-E6558pztow" name="Priprema pošiljke">
+    <include xmi:type="uml:Include" xmi:id="_0wutUGuyEeq-E6558pztow" addition="_XUw-kGuyEeq-E6558pztow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_1yiIkGuyEeq-E6558pztow" memberEnd="_1yiIk2uyEeq-E6558pztow _1yiIlGuyEeq-E6558pztow">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1yiIkWuyEeq-E6558pztow" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1yiIkmuyEeq-E6558pztow" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1yiIk2uyEeq-E6558pztow" name="priprema pošiljke" type="_x7lFIGuyEeq-E6558pztow" association="_1yiIkGuyEeq-E6558pztow"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1yiIlGuyEeq-E6558pztow" name="sektor za upravljanje isporukama" type="_kbbS0GuyEeq-E6558pztow" association="_1yiIkGuyEeq-E6558pztow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_7WrtoGuyEeq-E6558pztow" name="Predaja pošiljke kurirskoj službi"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-dbcIGuyEeq-E6558pztow" memberEnd="_-dcDMmuyEeq-E6558pztow _-dcDM2uyEeq-E6558pztow">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-dcDMGuyEeq-E6558pztow" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-dcDMWuyEeq-E6558pztow" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-dcDMmuyEeq-E6558pztow" name="predaja pošiljke kurirskoj službi" type="_7WrtoGuyEeq-E6558pztow" association="_-dbcIGuyEeq-E6558pztow"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-dcDM2uyEeq-E6558pztow" name="sektor za upravljanje isporukama" type="_kbbS0GuyEeq-E6558pztow" association="_-dbcIGuyEeq-E6558pztow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_NVyXgGuzEeq-E6558pztow" name="Kurirska služba"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_QtCnMGuzEeq-E6558pztow" name="Prijem pošiljke za slanje">
+    <include xmi:type="uml:Include" xmi:id="_dkZ7MGuzEeq-E6558pztow" addition="_7WrtoGuyEeq-E6558pztow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_S_JzwGuzEeq-E6558pztow" memberEnd="_S_Ka0muzEeq-E6558pztow _S_Ka02uzEeq-E6558pztow">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_S_Ka0GuzEeq-E6558pztow" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_S_Ka0WuzEeq-E6558pztow" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_S_Ka0muzEeq-E6558pztow" name="prijem pošiljke za slanje" type="_QtCnMGuzEeq-E6558pztow" association="_S_JzwGuzEeq-E6558pztow"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_S_Ka02uzEeq-E6558pztow" name="kurirska služba" type="_NVyXgGuzEeq-E6558pztow" association="_S_JzwGuzEeq-E6558pztow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_UmK04GuzEeq-E6558pztow" name="Dostava na kućnu adresu"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_aB0lQGuzEeq-E6558pztow" memberEnd="_aB1MUmuzEeq-E6558pztow _aB1MU2uzEeq-E6558pztow">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_aB1MUGuzEeq-E6558pztow" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_aB1MUWuzEeq-E6558pztow" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_aB1MUmuzEeq-E6558pztow" name="kurirska služba" type="_NVyXgGuzEeq-E6558pztow" association="_aB0lQGuzEeq-E6558pztow"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_aB1MU2uzEeq-E6558pztow" name="dostava na kućnu adresu" type="_UmK04GuzEeq-E6558pztow" association="_aB0lQGuzEeq-E6558pztow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_fqsSQGuzEeq-E6558pztow" name="Naplata proizvoda"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_h1xCsGuzEeq-E6558pztow" memberEnd="_h1xCs2uzEeq-E6558pztow _h1xCtGuzEeq-E6558pztow">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_h1xCsWuzEeq-E6558pztow" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_h1xCsmuzEeq-E6558pztow" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_h1xCs2uzEeq-E6558pztow" name="kurirska služba" type="_NVyXgGuzEeq-E6558pztow" association="_h1xCsGuzEeq-E6558pztow"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_h1xCtGuzEeq-E6558pztow" name="naplata proizvoda" type="_fqsSQGuzEeq-E6558pztow" association="_h1xCsGuzEeq-E6558pztow"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_tpJAkG4YEeqpy6XOfDMhTQ" name="Potencijalni radnik"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_4Dv-QG4YEeqpy6XOfDMhTQ" name="Prijavljuje se za poso">
+    <include xmi:type="uml:Include" xmi:id="_rOYjcG4aEeqpy6XOfDMhTQ" addition="_bsQ5YG4aEeqpy6XOfDMhTQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DkOX0G4ZEeqpy6XOfDMhTQ" name="Odlazi na obuku">
+    <include xmi:type="uml:Include" xmi:id="_mi0MMG4aEeqpy6XOfDMhTQ" addition="_JviqkG4ZEeqpy6XOfDMhTQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Hf5jMG4ZEeqpy6XOfDMhTQ" name="Potpisuje ugovor"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_JviqkG4ZEeqpy6XOfDMhTQ" name="Obucava novog radnika"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_NIMBYG4ZEeqpy6XOfDMhTQ" memberEnd="_NIMocG4ZEeqpy6XOfDMhTQ _NIMocW4ZEeqpy6XOfDMhTQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NIMBYW4ZEeqpy6XOfDMhTQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NIMBYm4ZEeqpy6XOfDMhTQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NIMocG4ZEeqpy6XOfDMhTQ" name="obucava novog radnika" type="_JviqkG4ZEeqpy6XOfDMhTQ" association="_NIMBYG4ZEeqpy6XOfDMhTQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NIMocW4ZEeqpy6XOfDMhTQ" name="kasir" type="_K8kvUGuxEeq-E6558pztow" association="_NIMBYG4ZEeqpy6XOfDMhTQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_uTtyIG4ZEeqpy6XOfDMhTQ" name="Prodavnica"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_QXjq8G4aEeqpy6XOfDMhTQ" name="Trazi novog radnika"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Yp5UkG4aEeqpy6XOfDMhTQ" name="Prima novog radnika"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_bsQ5YG4aEeqpy6XOfDMhTQ" name="Raspisuje konkurs"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_eBgScG4aEeqpy6XOfDMhTQ" memberEnd="_eBgSc24aEeqpy6XOfDMhTQ _eBgSdG4aEeqpy6XOfDMhTQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eBgScW4aEeqpy6XOfDMhTQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eBgScm4aEeqpy6XOfDMhTQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_eBgSc24aEeqpy6XOfDMhTQ" name="prodavnica" type="_uTtyIG4ZEeqpy6XOfDMhTQ" association="_eBgScG4aEeqpy6XOfDMhTQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_eBgSdG4aEeqpy6XOfDMhTQ" name="trazi novog radnika" type="_QXjq8G4aEeqpy6XOfDMhTQ" association="_eBgScG4aEeqpy6XOfDMhTQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fGDfsG4aEeqpy6XOfDMhTQ" memberEnd="_fGEGwm4aEeqpy6XOfDMhTQ _fGEGw24aEeqpy6XOfDMhTQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fGEGwG4aEeqpy6XOfDMhTQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fGEGwW4aEeqpy6XOfDMhTQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fGEGwm4aEeqpy6XOfDMhTQ" name="prima novog radnika" type="_Yp5UkG4aEeqpy6XOfDMhTQ" association="_fGDfsG4aEeqpy6XOfDMhTQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fGEGw24aEeqpy6XOfDMhTQ" name="prodavnica" type="_uTtyIG4ZEeqpy6XOfDMhTQ" association="_fGDfsG4aEeqpy6XOfDMhTQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_gNwuoG4aEeqpy6XOfDMhTQ" memberEnd="_gNwuo24aEeqpy6XOfDMhTQ _gNwupG4aEeqpy6XOfDMhTQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gNwuoW4aEeqpy6XOfDMhTQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gNwuom4aEeqpy6XOfDMhTQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_gNwuo24aEeqpy6XOfDMhTQ" name="raspisuje konkurs" type="_bsQ5YG4aEeqpy6XOfDMhTQ" association="_gNwuoG4aEeqpy6XOfDMhTQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_gNwupG4aEeqpy6XOfDMhTQ" name="prodavnica" type="_uTtyIG4ZEeqpy6XOfDMhTQ" association="_gNwuoG4aEeqpy6XOfDMhTQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_hSOcUG4aEeqpy6XOfDMhTQ" memberEnd="_hSPDYm4aEeqpy6XOfDMhTQ _hSPDY24aEeqpy6XOfDMhTQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hSPDYG4aEeqpy6XOfDMhTQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hSPDYW4aEeqpy6XOfDMhTQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_hSPDYm4aEeqpy6XOfDMhTQ" name="odlazi na obuku" type="_DkOX0G4ZEeqpy6XOfDMhTQ" association="_hSOcUG4aEeqpy6XOfDMhTQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_hSPDY24aEeqpy6XOfDMhTQ" name="potencijalni radnik" type="_tpJAkG4YEeqpy6XOfDMhTQ" association="_hSOcUG4aEeqpy6XOfDMhTQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_iPy30G4aEeqpy6XOfDMhTQ" memberEnd="_iPy3024aEeqpy6XOfDMhTQ _iPy31G4aEeqpy6XOfDMhTQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iPy30W4aEeqpy6XOfDMhTQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iPy30m4aEeqpy6XOfDMhTQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_iPy3024aEeqpy6XOfDMhTQ" name="prijavljuje se za poso" type="_4Dv-QG4YEeqpy6XOfDMhTQ" association="_iPy30G4aEeqpy6XOfDMhTQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_iPy31G4aEeqpy6XOfDMhTQ" name="potencijalni radnik" type="_tpJAkG4YEeqpy6XOfDMhTQ" association="_iPy30G4aEeqpy6XOfDMhTQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jEedEG4aEeqpy6XOfDMhTQ" memberEnd="_jEfEIm4aEeqpy6XOfDMhTQ _jEfEI24aEeqpy6XOfDMhTQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jEfEIG4aEeqpy6XOfDMhTQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jEfEIW4aEeqpy6XOfDMhTQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_jEfEIm4aEeqpy6XOfDMhTQ" name="potpisuje ugovor" type="_Hf5jMG4ZEeqpy6XOfDMhTQ" association="_jEedEG4aEeqpy6XOfDMhTQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_jEfEI24aEeqpy6XOfDMhTQ" name="potencijalni radnik" type="_tpJAkG4YEeqpy6XOfDMhTQ" association="_jEedEG4aEeqpy6XOfDMhTQ"/>
+  </packagedElement>
+</uml:Model>
