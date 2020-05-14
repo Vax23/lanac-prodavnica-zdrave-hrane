@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+	<title>Kupci</title>
+</h:head>
+<h:body>
+	<h:form>
+	<h4>Dodavanje</h4>
+		<div>
+			<h:outputLabel value="Id:" />
+		</div>
+		<div>
+			<h:inputText value="#{kupciController.idkup}"></h:inputText>
+		</div>
+
+		<div>
+			<h:outputLabel value="Ime:" />
+		</div>
+		<div>
+			<h:inputText value="#{kupciController.imekup}"></h:inputText>
+		</div>
+
+		<div>
+			<h:outputLabel value="Prezime:" />
+		</div>
+		<div>
+			<h:inputText value="#{kupciController.prezimekup}"></h:inputText>
+		</div>
+
+		<div>
+			<h:outputLabel value="Adresa:" />
+		</div>
+		<div>
+			<h:inputText value="#{kupciController.adresa}"></h:inputText>
+		</div>
+
+		<div>
+			<h:outputLabel value="Racun:" />
+		</div>
+		<div>
+			<h:inputText value="#{kupciController.racun}"></h:inputText>
+		</div>
+
+		<h:commandButton value="DodajKupca"
+			action="#{kupciController.dodajKupac(kupciController.idkup,kupciController.imekup,kupciController.prezimekup,kupciController.adresa,kupciController.racun)}"></h:commandButton>
+	</h:form>
+
+	<h:form>
+		<h4>Brisanje</h4>
+		<h:outputLabel value="Id za brisanje:" />
+		<div>
+			<h:inputText value="#{kupciController.bidkup}"></h:inputText>
+		</div>
+
+		<h:commandButton value="ObrisiKupca"
+			action="#{kupciController.brisiKupac(kupciController.bidkup)}"></h:commandButton>
+
+	</h:form>
+
+	<h:form>
+		<h4>Azuriranje</h4>
+		<h:outputLabel value="Id za azuriranje:" />
+		<div>
+			<h:inputText value="#{kupciController.aidkup}"></h:inputText>
+		</div>
+
+
+		<h:outputLabel value="Nova adresa:" />
+		<div>
+			<h:inputText value="#{kupciController.aadresa}"></h:inputText>
+		</div>
+
+		<h:commandButton value="AzurirajKupca"
+			action="#{kupciController.azurirajKupac(kupciController.aidkup,kupciController.aadresa)}"></h:commandButton>
+
+	</h:form>
+
+	<h:dataTable value="#{kupciController.listKupca()}" var="k"
+    			styleClass="order-table"
+    			headerClass="order-table-header"
+    			rowClasses="order-table-odd-row,order-table-even-row"
+    			style="color:white;font-size:23px;font-weight:bold; margin-top:30px;text-shadow: 1px 1px 2px black, 0 0 15px green, 0 0 5px darkgreen; border:3px solid #a5e840; background-color:rgba(211, 239, 167,0.7);text-align:center; border-spacing: 5px; width:80%; margin-left:10%;">
+    	
+    		<h:column >
+    			<f:facet  name="header">
+    				Id
+    			</f:facet>
+    			<h:outputText value="#{k.id}"/>
+    		</h:column>
+ 
+    		<h:column>
+    			<f:facet name="header">
+    				Ime
+				</f:facet>
+    			<h:outputText value="#{k.ime}"/>
+    		</h:column>
+
+    		<h:column>
+    			<f:facet name="header">
+    				Prezime
+				</f:facet>
+    			<h:outputText value="#{k.prezime}"/>
+    		</h:column>
+    		
+    		<h:column>
+    			<f:facet name="header">
+    				Adresa
+				</f:facet>
+    			<h:outputText value="#{k.adresa}"/>
+    		</h:column>
+    		
+    		<h:column>
+    			<f:facet name="header">
+    				Racun
+				</f:facet>
+    			<h:outputText value="#{k.racun}"/>
+    		</h:column>
+    	
+    	</h:dataTable>
+</h:body>
+</html>
